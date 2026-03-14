@@ -7,7 +7,7 @@ export const environment = {
     projectId: 'swe-project-e509c',
     appId: '1:15962810192:web:46381a60ec30bd8063ae55',
     storageBucket: 'swe-project-e509c.appspot.com',
-    apiKey: 'AIzaSyAKf_4Us2SxeF95FZ88poUQdGGp4x59cIw',
+    apiKey: 'your key',
     authDomain: 'swe-project-e509c.firebaseapp.com',
     messagingSenderId: '15962810192',
   },
