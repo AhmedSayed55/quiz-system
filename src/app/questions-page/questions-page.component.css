@@ -1,0 +1,30 @@
+button{
+  width:100px;
+  color: black;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white!important;
+}
+button:active{
+  width:100px;
+  color: black;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 15px;
+  background-color: green;
+}
+
+.btn1:active{
+  width:100px;
+  color: black;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 15px;
+  background-color: green;
+}
+
+.headerofcard{
+  background-color: blueviolet;
+  color: white;
+}

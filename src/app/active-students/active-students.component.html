@@ -1,0 +1,4 @@
+<div  class="quiz"  *ngFor="let studentName of all_students">
+  <p class="quizname"> {{ studentName.userName }} </p>
+  <button routerLink="../follow" value={{studentName.userName}} id={{studentName.userName}} class="start"  (click)="sendUserName(this.studentName.userName)" >show answers</button>
+</div>

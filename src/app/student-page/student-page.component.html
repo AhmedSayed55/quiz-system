@@ -1,0 +1,24 @@
+
+
+
+    <div>
+        <label for="">filter:</label>
+        <select id="" name="" class="dropDown">
+          <option value="">swe</option>
+          <option value="">is</option>
+          <option value="">cs</option>
+          <option value="">db</option>
+        </select>
+    </div>
+
+   
+    <div  class="quiz"  *ngFor="let quizzes of all_users" >
+        
+      <p class="quizname"> {{ quizzes.quizName }} <br>{{ quizzes.courseName }}</p>
+      <button *ngIf="quizzes.available!='false' "   class="start" [disabled]="enabled" (click)="sendQuizName(this.quizzes.quizName);updatestudentcountDocument(this.quizzes.quizName);disbalebutton()"  routerLink="../quiz">start</button>
+    </div>
+
+
+
+
+

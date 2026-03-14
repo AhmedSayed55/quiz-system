@@ -1,0 +1,38 @@
+<input type="text" id="username" class="form-control" [(ngModel)]="quizName" />
+<input type="text" id="username" class="form-control" [(ngModel)]="courseName" />
+<button (click)="addNewQuizWithSpecificID();showHide()" class="btn btn-primary" type="button">confirm</button>
+<div id="user-data" *ngIf="show">
+  <div class="form-group">
+    <label for="username">add the question</label>
+    <input type="text" id="username" class="form-control" [(ngModel)]="question" />
+
+<label>true
+    <input
+    type="radio"
+    name="true"
+    value=true
+    [(ngModel)]="answer"
+  /></label>
+
+  <label>false
+    <input
+    type="radio"
+    name="false"
+    value=false
+    [(ngModel)]="answer"
+  /></label><br>
+    <button (click)="addNewQuestionWithSpecificID()" class="btn btn-primary" type="button">Add question</button>
+  </div></div>
+
+
+<div class="card" style="margin-left: 10%;margin-right: 10%;" *ngFor="let addQuiz of all_addQuestion" >
+  <div class="card-header headerofcard" >
+   <p> question</p>
+  </div>
+  <div class="card-body" >
+    <p class="card-text">{{addQuiz.question}}<br>answer:{{addQuiz.answer}}</p>
+
+
+  </div>
+</div>
+

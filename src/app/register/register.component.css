@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap%27');
+*{
+  margin: px;
+  padding: px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color:whitesmoke;
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  border: rgb(240, 239, 239) solid;
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid blueviolet;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 99%;
+  height: 40px;
+  background: none;
+  margin: .2em;
+}
+
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: blueviolet;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: blueviolet;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.button_style{
+  background: blueviolet;
+  color: #e9f4fb;
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: 1px solid;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+

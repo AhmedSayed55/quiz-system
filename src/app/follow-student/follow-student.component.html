@@ -1,0 +1,7 @@
+<div *ngFor="let studentAns of all_answers">
+  <p>{{studentAns.ans}}</p>
+</div>
+
+
+<input [(ngModel)]="gradeview">
+<button (click)="getgradeofstudentDocument()">showgrade</button>
